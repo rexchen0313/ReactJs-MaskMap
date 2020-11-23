@@ -39,7 +39,7 @@ function setIcon(data, center, position) {
 
 const MaskMap = ({center, zoom, list, style}) => (
   <Map center={center} zoom={zoom} style={style}>
-    <TileLayer url={OSMUrl} />
+    <TileLayer url={OSMUrl} attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'/>
       {list && list.map((data) => (
         <Marker key={data.id} position={[data.coordinates.latitude, data.coordinates.longitude]} icon={setIcon(data, center, [data.coordinates.latitude, data.coordinates.longitude])}>
           <Popup>

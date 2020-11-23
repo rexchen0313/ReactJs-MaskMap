@@ -11,7 +11,6 @@ class Main extends React.Component {
     this.state = {
       rawData: {},
       datas: [],
-      list: [],
       search: '',
       // 定位中心，預設台北火車站附近
       latitude: 25.0468121, // 緯度
